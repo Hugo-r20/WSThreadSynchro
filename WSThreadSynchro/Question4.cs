@@ -14,17 +14,17 @@ namespace WSThreadSynchro
         static void Main(string[] args)
         {
             Console.WriteLine("Program start");
-            CLpara clPara = new CLpara();
-            DELG deleg = new DELG(clPara.method_para);
+            
+            DELG deleg = new DELG(CLpara.method_para);
             Thread thread = new Thread(deleg.Invoke);
             thread.Start();
             Console.Read();
         }
     }
 
-    class CLpara
+    static class CLpara
     {
-        public void method_para()
+        public static void method_para()
         {
             for (int i = 0; i < 10; i++)
             {
