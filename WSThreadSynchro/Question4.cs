@@ -14,17 +14,17 @@ namespace WSThreadSynchro
         {
             Console.WriteLine("Program start");
             
-            Thread thread = new Thread(new ThreadStart(
-                    () =>
+            Thread thread = new Thread(new ParameterizedThreadStart(
+                    (msg) =>
                     {
                         for (int i = 0; i < 10; i++)
                         {
-                            Console.WriteLine("Work... " + i);
+                            Console.WriteLine("Work... " + i + " - " + msg);
                             Thread.Sleep(1000);
                         }
                     }
                 ));
-            thread.Start();
+            thread.Start((string)("Hi this is a parameter"));
             Console.Read();
         }
     }
