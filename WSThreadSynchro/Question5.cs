@@ -11,7 +11,7 @@ namespace WSThreadSynchro
     {
         private delegate void DELG(object o);
 
-        static void Main(string[] args)
+/*        static void Main(string[] args)
         {
             Console.WriteLine("Program Question 5 start");
 
@@ -35,7 +35,7 @@ namespace WSThreadSynchro
             ThreadPool.QueueUserWorkItem(delegate { t3.Start((object)("T3")); });
 
             Console.Read();
-        }
+        }*/
     }
 }
 
