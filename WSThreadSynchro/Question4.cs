@@ -10,7 +10,7 @@ namespace WSThreadSynchro
     class Question4
     {
         
-        static void Main(string[] args)
+     /*   static void Main(string[] args)
         {
             Console.WriteLine("Program start");
             
@@ -26,7 +26,7 @@ namespace WSThreadSynchro
                 ));
             thread.Start((string)("Hi this is a parameter"));
             Console.Read();
-        }
+        }*/
     }
 }
 
