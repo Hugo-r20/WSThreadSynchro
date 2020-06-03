@@ -10,7 +10,7 @@ namespace CorbeilleThreadEtSynchro
     {
         private delegate void DELG(object o);
 
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             IAsyncResult asyncR;
 
@@ -46,6 +46,6 @@ namespace CorbeilleThreadEtSynchro
 
             Console.Read();
 
-        }
+        }*/
     }
 }
