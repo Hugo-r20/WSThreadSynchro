@@ -10,7 +10,7 @@ namespace CorbeilleThreadEtSynchro
     class Question7
     {
         private delegate void DELG(object o);
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Initialisation du thread principal...ok");
@@ -42,7 +42,7 @@ namespace CorbeilleThreadEtSynchro
                 System.Threading.Thread.Sleep(3000);
             }
             Console.Read();
-        }
+        }*/
     }
 }
 
