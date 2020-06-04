@@ -13,7 +13,7 @@ namespace CorbeilleThreadEtSynchro
         private static int var = 0;
         private static Mutex mutex;
 
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             mutex = new Mutex(false);
             DELG deleg = (state) =>
@@ -33,6 +33,6 @@ namespace CorbeilleThreadEtSynchro
             t2.Start((object)("T2"));
 
             Console.Read();
-        }
+        }*/
     }
 }
