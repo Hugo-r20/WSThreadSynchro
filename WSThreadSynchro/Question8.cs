@@ -13,7 +13,7 @@ namespace CorbeilleThreadEtSynchro
         private static int var = 0;
         private static object _lock;
 
-        static void Main(string[] args)
+       /* static void Main(string[] args)
         {
             _lock = new object();
             DELG deleg = (state) =>
@@ -32,6 +32,6 @@ namespace CorbeilleThreadEtSynchro
             t2.Start((object)("T2"));
 
             Console.Read();
-        }
+        }*/
     }
 }
